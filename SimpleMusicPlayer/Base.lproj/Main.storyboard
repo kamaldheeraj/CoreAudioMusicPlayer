@@ -9,18 +9,18 @@
         <scene sceneID="JKy-1B-WbP">
             <objects>
                 <tableViewController id="aLO-xe-YnR" customClass="SongsListController" customModule="SimpleMusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="22" sectionFooterHeight="22" id="bVH-1o-IQr">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" sectionHeaderHeight="22" sectionFooterHeight="22" id="bVH-1o-IQr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCell" rowHeight="71" id="LuS-ck-6yn" customClass="SongCell" customModule="SimpleMusicPlayer" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCell" rowHeight="106" id="LuS-ck-6yn" customClass="SongCell" customModule="SimpleMusicPlayer" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LuS-ck-6yn" id="1O6-Oh-2j0">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JO-rn-Jc2">
-                                            <rect key="frame" x="8" y="24" width="584" height="21"/>
+                                            <rect key="frame" x="8" y="8" width="584" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -29,7 +29,7 @@
                                     <constraints>
                                         <constraint firstItem="2JO-rn-Jc2" firstAttribute="leading" secondItem="1O6-Oh-2j0" secondAttribute="leadingMargin" id="2ie-jH-sEz"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="2JO-rn-Jc2" secondAttribute="trailing" id="5sG-YG-3kr"/>
-                                        <constraint firstAttribute="centerY" secondItem="2JO-rn-Jc2" secondAttribute="centerY" id="Nw7-ig-ZtE"/>
+                                        <constraint firstItem="2JO-rn-Jc2" firstAttribute="top" secondItem="1O6-Oh-2j0" secondAttribute="topMargin" id="H28-IB-0Un"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -47,6 +47,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1t-c3-tO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1596" y="225"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="avk-Ny-tvl">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="YIf-in-C7K" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yay-NM-cIJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2232" y="225"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LfJ-vw-g06">
