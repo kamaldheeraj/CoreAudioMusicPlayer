@@ -13,6 +13,11 @@
 		CFBF8B901BDDE5480005770A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8B8F1BDDE5480005770A /* Images.xcassets */; };
 		CFBF8B931BDDE5480005770A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8B911BDDE5480005770A /* LaunchScreen.xib */; };
 		CFBF8B9F1BDDE5480005770A /* SimpleMusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF8B9E1BDDE5480005770A /* SimpleMusicPlayerTests.swift */; };
+		CFBF8BB01BDDE65C0005770A /* beethoven-furelise-bertoli (mp3cut.net).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8BAA1BDDE65C0005770A /* beethoven-furelise-bertoli (mp3cut.net).mp3 */; };
+		CFBF8BB11BDDE65C0005770A /* Molto Allegro (mp3cut.net).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8BAB1BDDE65C0005770A /* Molto Allegro (mp3cut.net).mp3 */; };
+		CFBF8BB21BDDE65C0005770A /* psy_-_gangnam_style_[_the_sexy_peoplez_mix_] (mp3cut.net).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8BAC1BDDE65C0005770A /* psy_-_gangnam_style_[_the_sexy_peoplez_mix_] (mp3cut.net).mp3 */; };
+		CFBF8BB31BDDE65C0005770A /* what_does_the_fox_says_(nick_di_rocco_original_remix) (mp3cut.net).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8BAD1BDDE65C0005770A /* what_does_the_fox_says_(nick_di_rocco_original_remix) (mp3cut.net).mp3 */; };
+		CFBF8BB41BDDE65C0005770A /* who_let_the_dogs_out_(sam_tobiana_edit)_-_free_download (mp3cut.net).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8BAE1BDDE65C0005770A /* who_let_the_dogs_out_(sam_tobiana_edit)_-_free_download (mp3cut.net).mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		CFBF8B981BDDE5480005770A /* SimpleMusicPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMusicPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBF8B9D1BDDE5480005770A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFBF8B9E1BDDE5480005770A /* SimpleMusicPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMusicPlayerTests.swift; sourceTree = "<group>"; };
+		CFBF8BAA1BDDE65C0005770A /* beethoven-furelise-bertoli (mp3cut.net).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "beethoven-furelise-bertoli (mp3cut.net).mp3"; sourceTree = "<group>"; };
+		CFBF8BAB1BDDE65C0005770A /* Molto Allegro (mp3cut.net).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Molto Allegro (mp3cut.net).mp3"; sourceTree = "<group>"; };
+		CFBF8BAC1BDDE65C0005770A /* psy_-_gangnam_style_[_the_sexy_peoplez_mix_] (mp3cut.net).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "psy_-_gangnam_style_[_the_sexy_peoplez_mix_] (mp3cut.net).mp3"; sourceTree = "<group>"; };
+		CFBF8BAD1BDDE65C0005770A /* what_does_the_fox_says_(nick_di_rocco_original_remix) (mp3cut.net).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "what_does_the_fox_says_(nick_di_rocco_original_remix) (mp3cut.net).mp3"; sourceTree = "<group>"; };
+		CFBF8BAE1BDDE65C0005770A /* who_let_the_dogs_out_(sam_tobiana_edit)_-_free_download (mp3cut.net).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "who_let_the_dogs_out_(sam_tobiana_edit)_-_free_download (mp3cut.net).mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,7 @@
 		CFBF8B861BDDE5480005770A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFBF8BA81BDDE65C0005770A /* Music */,
 				CFBF8B871BDDE5480005770A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +121,18 @@
 				CFBF8B9D1BDDE5480005770A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFBF8BA81BDDE65C0005770A /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF8BAA1BDDE65C0005770A /* beethoven-furelise-bertoli (mp3cut.net).mp3 */,
+				CFBF8BAB1BDDE65C0005770A /* Molto Allegro (mp3cut.net).mp3 */,
+				CFBF8BAC1BDDE65C0005770A /* psy_-_gangnam_style_[_the_sexy_peoplez_mix_] (mp3cut.net).mp3 */,
+				CFBF8BAD1BDDE65C0005770A /* what_does_the_fox_says_(nick_di_rocco_original_remix) (mp3cut.net).mp3 */,
+				CFBF8BAE1BDDE65C0005770A /* who_let_the_dogs_out_(sam_tobiana_edit)_-_free_download (mp3cut.net).mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +215,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFBF8BB21BDDE65C0005770A /* psy_-_gangnam_style_[_the_sexy_peoplez_mix_] (mp3cut.net).mp3 in Resources */,
 				CFBF8B8E1BDDE5480005770A /* Main.storyboard in Resources */,
 				CFBF8B931BDDE5480005770A /* LaunchScreen.xib in Resources */,
+				CFBF8BB01BDDE65C0005770A /* beethoven-furelise-bertoli (mp3cut.net).mp3 in Resources */,
+				CFBF8BB31BDDE65C0005770A /* what_does_the_fox_says_(nick_di_rocco_original_remix) (mp3cut.net).mp3 in Resources */,
 				CFBF8B901BDDE5480005770A /* Images.xcassets in Resources */,
+				CFBF8BB41BDDE65C0005770A /* who_let_the_dogs_out_(sam_tobiana_edit)_-_free_download (mp3cut.net).mp3 in Resources */,
+				CFBF8BB11BDDE65C0005770A /* Molto Allegro (mp3cut.net).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
