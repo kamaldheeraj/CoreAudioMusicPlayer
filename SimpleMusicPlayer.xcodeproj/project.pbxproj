@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFBF8B891BDDE5480005770A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF8B881BDDE5480005770A /* AppDelegate.swift */; };
+		CFBF8B8B1BDDE5480005770A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF8B8A1BDDE5480005770A /* ViewController.swift */; };
+		CFBF8B8E1BDDE5480005770A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8B8C1BDDE5480005770A /* Main.storyboard */; };
+		CFBF8B901BDDE5480005770A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8B8F1BDDE5480005770A /* Images.xcassets */; };
+		CFBF8B931BDDE5480005770A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8B911BDDE5480005770A /* LaunchScreen.xib */; };
+		CFBF8B9F1BDDE5480005770A /* SimpleMusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF8B9E1BDDE5480005770A /* SimpleMusicPlayerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFBF8B991BDDE5480005770A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFBF8B7B1BDDE5480005770A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFBF8B821BDDE5480005770A;
+			remoteInfo = SimpleMusicPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFBF8B831BDDE5480005770A /* SimpleMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBF8B871BDDE5480005770A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFBF8B881BDDE5480005770A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFBF8B8A1BDDE5480005770A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFBF8B8D1BDDE5480005770A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFBF8B8F1BDDE5480005770A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CFBF8B921BDDE5480005770A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CFBF8B981BDDE5480005770A /* SimpleMusicPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMusicPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBF8B9D1BDDE5480005770A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFBF8B9E1BDDE5480005770A /* SimpleMusicPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMusicPlayerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFBF8B801BDDE5480005770A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBF8B951BDDE5480005770A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFBF8B7A1BDDE5480005770A = {
+			isa = PBXGroup;
+			children = (
+				CFBF8B851BDDE5480005770A /* SimpleMusicPlayer */,
+				CFBF8B9B1BDDE5480005770A /* SimpleMusicPlayerTests */,
+				CFBF8B841BDDE5480005770A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFBF8B841BDDE5480005770A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF8B831BDDE5480005770A /* SimpleMusicPlayer.app */,
+				CFBF8B981BDDE5480005770A /* SimpleMusicPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFBF8B851BDDE5480005770A /* SimpleMusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF8B881BDDE5480005770A /* AppDelegate.swift */,
+				CFBF8B8A1BDDE5480005770A /* ViewController.swift */,
+				CFBF8B8C1BDDE5480005770A /* Main.storyboard */,
+				CFBF8B8F1BDDE5480005770A /* Images.xcassets */,
+				CFBF8B911BDDE5480005770A /* LaunchScreen.xib */,
+				CFBF8B861BDDE5480005770A /* Supporting Files */,
+			);
+			path = SimpleMusicPlayer;
+			sourceTree = "<group>";
+		};
+		CFBF8B861BDDE5480005770A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF8B871BDDE5480005770A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFBF8B9B1BDDE5480005770A /* SimpleMusicPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF8B9E1BDDE5480005770A /* SimpleMusicPlayerTests.swift */,
+				CFBF8B9C1BDDE5480005770A /* Supporting Files */,
+			);
+			path = SimpleMusicPlayerTests;
+			sourceTree = "<group>";
+		};
+		CFBF8B9C1BDDE5480005770A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF8B9D1BDDE5480005770A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFBF8B821BDDE5480005770A /* SimpleMusicPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFBF8BA21BDDE5480005770A /* Build configuration list for PBXNativeTarget "SimpleMusicPlayer" */;
+			buildPhases = (
+				CFBF8B7F1BDDE5480005770A /* Sources */,
+				CFBF8B801BDDE5480005770A /* Frameworks */,
+				CFBF8B811BDDE5480005770A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleMusicPlayer;
+			productName = SimpleMusicPlayer;
+			productReference = CFBF8B831BDDE5480005770A /* SimpleMusicPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFBF8B971BDDE5480005770A /* SimpleMusicPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFBF8BA51BDDE5480005770A /* Build configuration list for PBXNativeTarget "SimpleMusicPlayerTests" */;
+			buildPhases = (
+				CFBF8B941BDDE5480005770A /* Sources */,
+				CFBF8B951BDDE5480005770A /* Frameworks */,
+				CFBF8B961BDDE5480005770A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFBF8B9A1BDDE5480005770A /* PBXTargetDependency */,
+			);
+			name = SimpleMusicPlayerTests;
+			productName = SimpleMusicPlayerTests;
+			productReference = CFBF8B981BDDE5480005770A /* SimpleMusicPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFBF8B7B1BDDE5480005770A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = AbstractApps;
+				TargetAttributes = {
+					CFBF8B821BDDE5480005770A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CFBF8B971BDDE5480005770A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CFBF8B821BDDE5480005770A;
+					};
+				};
+			};
+			buildConfigurationList = CFBF8B7E1BDDE5480005770A /* Build configuration list for PBXProject "SimpleMusicPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFBF8B7A1BDDE5480005770A;
+			productRefGroup = CFBF8B841BDDE5480005770A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFBF8B821BDDE5480005770A /* SimpleMusicPlayer */,
+				CFBF8B971BDDE5480005770A /* SimpleMusicPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFBF8B811BDDE5480005770A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBF8B8E1BDDE5480005770A /* Main.storyboard in Resources */,
+				CFBF8B931BDDE5480005770A /* LaunchScreen.xib in Resources */,
+				CFBF8B901BDDE5480005770A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBF8B961BDDE5480005770A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFBF8B7F1BDDE5480005770A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBF8B8B1BDDE5480005770A /* ViewController.swift in Sources */,
+				CFBF8B891BDDE5480005770A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBF8B941BDDE5480005770A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBF8B9F1BDDE5480005770A /* SimpleMusicPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFBF8B9A1BDDE5480005770A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFBF8B821BDDE5480005770A /* SimpleMusicPlayer */;
+			targetProxy = CFBF8B991BDDE5480005770A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFBF8B8C1BDDE5480005770A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFBF8B8D1BDDE5480005770A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFBF8B911BDDE5480005770A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFBF8B921BDDE5480005770A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFBF8BA01BDDE5480005770A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFBF8BA11BDDE5480005770A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFBF8BA31BDDE5480005770A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleMusicPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CFBF8BA41BDDE5480005770A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleMusicPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CFBF8BA61BDDE5480005770A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimpleMusicPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleMusicPlayer.app/SimpleMusicPlayer";
+			};
+			name = Debug;
+		};
+		CFBF8BA71BDDE5480005770A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimpleMusicPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleMusicPlayer.app/SimpleMusicPlayer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFBF8B7E1BDDE5480005770A /* Build configuration list for PBXProject "SimpleMusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBF8BA01BDDE5480005770A /* Debug */,
+				CFBF8BA11BDDE5480005770A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFBF8BA21BDDE5480005770A /* Build configuration list for PBXNativeTarget "SimpleMusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBF8BA31BDDE5480005770A /* Debug */,
+				CFBF8BA41BDDE5480005770A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFBF8BA51BDDE5480005770A /* Build configuration list for PBXNativeTarget "SimpleMusicPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBF8BA61BDDE5480005770A /* Debug */,
+				CFBF8BA71BDDE5480005770A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFBF8B7B1BDDE5480005770A /* Project object */;
+}
