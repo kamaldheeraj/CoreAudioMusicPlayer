@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55C7C74D1BDF195F002A503F /* SongPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C7C74C1BDF195F002A503F /* SongPlayerViewController.swift */; };
 		CFBF8B891BDDE5480005770A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF8B881BDDE5480005770A /* AppDelegate.swift */; };
 		CFBF8B8B1BDDE5480005770A /* SongsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF8B8A1BDDE5480005770A /* SongsListController.swift */; };
 		CFBF8B8E1BDDE5480005770A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8B8C1BDDE5480005770A /* Main.storyboard */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55C7C74C1BDF195F002A503F /* SongPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongPlayerViewController.swift; sourceTree = "<group>"; };
+		55C7C77E1BDF3BFF002A503F /* SampleVideo_1080x720_1mb.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SampleVideo_1080x720_1mb.mp4; sourceTree = "<group>"; };
 		CFBF8B831BDDE5480005770A /* SimpleMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBF8B871BDDE5480005770A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFBF8B881BDDE5480005770A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 				CFBF8B8A1BDDE5480005770A /* SongsListController.swift */,
 				CFBF8B8C1BDDE5480005770A /* Main.storyboard */,
 				CFBF8BC21BDE8A7E0005770A /* SongCell.swift */,
+				55C7C74C1BDF195F002A503F /* SongPlayerViewController.swift */,
 				CFBF8B8F1BDDE5480005770A /* Images.xcassets */,
 				CFBF8B911BDDE5480005770A /* LaunchScreen.xib */,
 				CFBF8B861BDDE5480005770A /* Supporting Files */,
@@ -131,6 +135,7 @@
 		CFBF8BDE1BDE91F50005770A /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				55C7C77E1BDF3BFF002A503F /* SampleVideo_1080x720_1mb.mp4 */,
 				CFBF8BDF1BDE91F50005770A /* Furelise-Beethoven-bertoli.mp3 */,
 				CFBF8BE01BDE91F50005770A /* Molto Allegro.mp3 */,
 				CFBF8BE11BDE91F50005770A /* psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 */,
@@ -247,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C7C74D1BDF195F002A503F /* SongPlayerViewController.swift in Sources */,
 				CFBF8B8B1BDDE5480005770A /* SongsListController.swift in Sources */,
 				CFBF8BC31BDE8A7E0005770A /* SongCell.swift in Sources */,
 				CFBF8B891BDDE5480005770A /* AppDelegate.swift in Sources */,

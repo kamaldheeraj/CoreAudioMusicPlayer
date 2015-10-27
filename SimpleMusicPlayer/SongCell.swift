@@ -11,9 +11,6 @@ import UIKit
 class SongCell: UITableViewCell {
 
     @IBOutlet weak var songName: UILabel!
-    @IBOutlet weak var playButton: UIButton!
-    @IBOutlet weak var pauseButton: UIButton!
-    @IBOutlet weak var stopButton: UIButton!
     var song:String!{
         didSet{
             songName.text = song.lastPathComponent
@@ -29,12 +26,5 @@ class SongCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-
-    @IBAction func playSong(sender: AnyObject) {
-    }
-    @IBAction func stopSong(sender: AnyObject) {
-    }
-    @IBAction func pauseSong(sender: AnyObject) {
     }
 }
