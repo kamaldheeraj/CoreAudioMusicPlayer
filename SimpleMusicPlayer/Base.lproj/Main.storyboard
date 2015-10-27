@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oNP-uD-74J">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oNP-uD-74J">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -20,26 +20,50 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JO-rn-Jc2">
-                                            <rect key="frame" x="8" y="8" width="584" height="21"/>
+                                            <rect key="frame" x="8" y="8" width="584" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYH-8q-SYY">
-                                            <rect key="frame" x="165" y="67" width="33" height="30"/>
-                                            <state key="normal" title="Play">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYH-8q-SYY">
+                                            <rect key="frame" x="276" y="49" width="48" height="48"/>
+                                            <state key="normal" image="Play"/>
+                                            <connections>
+                                                <action selector="playSong:" destination="LuS-ck-6yn" eventType="touchUpInside" id="Jgc-01-a4U"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67g-AQ-B6t">
+                                            <rect key="frame" x="332" y="49" width="48" height="48"/>
+                                            <state key="normal" image="Pause"/>
+                                            <connections>
+                                                <action selector="pauseSong:" destination="LuS-ck-6yn" eventType="touchUpInside" id="XHX-iX-tKS"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VP4-mo-RzK">
+                                            <rect key="frame" x="220" y="49" width="48" height="48"/>
+                                            <state key="normal" image="Stop"/>
+                                            <connections>
+                                                <action selector="stopSong:" destination="LuS-ck-6yn" eventType="touchUpInside" id="8L0-WC-HWl"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="2JO-rn-Jc2" firstAttribute="leading" secondItem="1O6-Oh-2j0" secondAttribute="leadingMargin" id="2ie-jH-sEz"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="2JO-rn-Jc2" secondAttribute="trailing" id="5sG-YG-3kr"/>
                                         <constraint firstItem="2JO-rn-Jc2" firstAttribute="top" secondItem="1O6-Oh-2j0" secondAttribute="topMargin" id="H28-IB-0Un"/>
+                                        <constraint firstItem="UYH-8q-SYY" firstAttribute="top" secondItem="2JO-rn-Jc2" secondAttribute="bottom" constant="20.5" id="KjF-1A-byu"/>
+                                        <constraint firstItem="UYH-8q-SYY" firstAttribute="centerY" secondItem="VP4-mo-RzK" secondAttribute="centerY" id="U5V-A7-IXJ"/>
+                                        <constraint firstItem="UYH-8q-SYY" firstAttribute="centerY" secondItem="67g-AQ-B6t" secondAttribute="centerY" id="VR2-IV-Zcg"/>
+                                        <constraint firstItem="UYH-8q-SYY" firstAttribute="leading" secondItem="VP4-mo-RzK" secondAttribute="trailing" constant="8" id="Xwn-mg-rgn"/>
+                                        <constraint firstItem="67g-AQ-B6t" firstAttribute="leading" secondItem="UYH-8q-SYY" secondAttribute="trailing" constant="8" id="bbz-zb-RHi"/>
+                                        <constraint firstAttribute="centerX" secondItem="UYH-8q-SYY" secondAttribute="centerX" id="nOs-qn-Ejb"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="pauseButton" destination="67g-AQ-B6t" id="4Wx-N0-90V"/>
+                                    <outlet property="playButton" destination="UYH-8q-SYY" id="BZu-bl-XEI"/>
                                     <outlet property="songName" destination="2JO-rn-Jc2" id="zbU-mH-des"/>
+                                    <outlet property="stopButton" destination="VP4-mo-RzK" id="u9Q-7O-1M3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -73,4 +97,9 @@
             <point key="canvasLocation" x="784" y="225"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Pause" width="48" height="48"/>
+        <image name="Play" width="48" height="48"/>
+        <image name="Stop" width="48" height="48"/>
+    </resources>
 </document>

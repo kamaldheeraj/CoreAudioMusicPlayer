@@ -38,7 +38,7 @@ class SongsListController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("SongCell", forIndexPath: indexPath) as! SongCell
         
-        let song = songs[indexPath.row]
+        let song: (AnyObject) = songs[indexPath.row]
         cell.song = song as! String
         return cell
     }
