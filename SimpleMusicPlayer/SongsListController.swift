@@ -16,12 +16,15 @@
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
             
-            let filePaths = NSBundle.mainBundle().pathsForResourcesOfType(nil, inDirectory: nil)
+            //let filePaths = NSBundle.mainBundle().pathsForResourcesOfType(nil, inDirectory: nil)
+            for bundle in NSBundle.allBundles(){
+                var filePaths = bundle.pathsForResourcesOfType(nil, inDirectory: nil)
             for file in filePaths{
                 println(file.lastPathComponent)
                 if(file.pathExtension=="mp3" || file.pathExtension=="m4a" || file.pathExtension == "mp4"){
                     songs.append(file)
                 }
+            }
             }
         }
         

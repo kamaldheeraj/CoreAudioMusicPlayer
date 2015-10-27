@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		55C7C74D1BDF195F002A503F /* SongPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C7C74C1BDF195F002A503F /* SongPlayerViewController.swift */; };
-		55C7C7821BDF3FB7002A503F /* Furelise-Beethoven-bertoli.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55C7C7811BDF3FB7002A503F /* Furelise-Beethoven-bertoli.mp3 */; };
+		55C7C78E1BDF440B002A503F /* 1.Uptown Funk (Bruno Mars).m4a in Resources */ = {isa = PBXBuildFile; fileRef = 55C7C7871BDF440B002A503F /* 1.Uptown Funk (Bruno Mars).m4a */; };
+		55C7C78F1BDF440B002A503F /* 2.what_does_the_fox_says_(nick_di_rocco_original_remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55C7C7881BDF440B002A503F /* 2.what_does_the_fox_says_(nick_di_rocco_original_remix).mp3 */; };
+		55C7C7901BDF440B002A503F /* 3.psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55C7C7891BDF440B002A503F /* 3.psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 */; };
+		55C7C7911BDF440B002A503F /* 4.Furelise-Beethoven-bertoli.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55C7C78A1BDF440B002A503F /* 4.Furelise-Beethoven-bertoli.mp3 */; };
+		55C7C7921BDF440B002A503F /* 5.Molto Allegro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55C7C78B1BDF440B002A503F /* 5.Molto Allegro.mp3 */; };
+		55C7C7931BDF440B002A503F /* 7.SampleVideo_1080x720_1mb.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 55C7C78C1BDF440B002A503F /* 7.SampleVideo_1080x720_1mb.mp4 */; };
+		55C7C7941BDF440B002A503F /* 8.who_let_the_dogs_out_(sam_tobiana_edit).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55C7C78D1BDF440B002A503F /* 8.who_let_the_dogs_out_(sam_tobiana_edit).mp3 */; };
 		CFBF8B891BDDE5480005770A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF8B881BDDE5480005770A /* AppDelegate.swift */; };
 		CFBF8B8B1BDDE5480005770A /* SongsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF8B8A1BDDE5480005770A /* SongsListController.swift */; };
 		CFBF8B8E1BDDE5480005770A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8B8C1BDDE5480005770A /* Main.storyboard */; };
@@ -16,11 +22,6 @@
 		CFBF8B931BDDE5480005770A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8B911BDDE5480005770A /* LaunchScreen.xib */; };
 		CFBF8B9F1BDDE5480005770A /* SimpleMusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF8B9E1BDDE5480005770A /* SimpleMusicPlayerTests.swift */; };
 		CFBF8BC31BDE8A7E0005770A /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF8BC21BDE8A7E0005770A /* SongCell.swift */; };
-		CFBF8BE61BDE91F50005770A /* Molto Allegro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8BE01BDE91F50005770A /* Molto Allegro.mp3 */; };
-		CFBF8BE71BDE91F50005770A /* psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8BE11BDE91F50005770A /* psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 */; };
-		CFBF8BE81BDE91F50005770A /* Uptown Funk (Bruno Mars).m4a in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8BE21BDE91F50005770A /* Uptown Funk (Bruno Mars).m4a */; };
-		CFBF8BE91BDE91F50005770A /* what_does_the_fox_says_(nick_di_rocco_original_remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8BE31BDE91F50005770A /* what_does_the_fox_says_(nick_di_rocco_original_remix).mp3 */; };
-		CFBF8BEA1BDE91F50005770A /* who_let_the_dogs_out_(sam_tobiana_edit).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFBF8BE41BDE91F50005770A /* who_let_the_dogs_out_(sam_tobiana_edit).mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +36,13 @@
 
 /* Begin PBXFileReference section */
 		55C7C74C1BDF195F002A503F /* SongPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongPlayerViewController.swift; sourceTree = "<group>"; };
-		55C7C77E1BDF3BFF002A503F /* SampleVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = SampleVideo.mp4; path = Music/SampleVideo.mp4; sourceTree = "<group>"; };
-		55C7C7811BDF3FB7002A503F /* Furelise-Beethoven-bertoli.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Furelise-Beethoven-bertoli.mp3"; sourceTree = "<group>"; };
+		55C7C7871BDF440B002A503F /* 1.Uptown Funk (Bruno Mars).m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1.Uptown Funk (Bruno Mars).m4a"; sourceTree = "<group>"; };
+		55C7C7881BDF440B002A503F /* 2.what_does_the_fox_says_(nick_di_rocco_original_remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2.what_does_the_fox_says_(nick_di_rocco_original_remix).mp3"; sourceTree = "<group>"; };
+		55C7C7891BDF440B002A503F /* 3.psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "3.psy-gangnam_style[_the_sexy_peoplez_mix_].mp3"; sourceTree = "<group>"; };
+		55C7C78A1BDF440B002A503F /* 4.Furelise-Beethoven-bertoli.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "4.Furelise-Beethoven-bertoli.mp3"; sourceTree = "<group>"; };
+		55C7C78B1BDF440B002A503F /* 5.Molto Allegro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5.Molto Allegro.mp3"; sourceTree = "<group>"; };
+		55C7C78C1BDF440B002A503F /* 7.SampleVideo_1080x720_1mb.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.SampleVideo_1080x720_1mb.mp4; sourceTree = "<group>"; };
+		55C7C78D1BDF440B002A503F /* 8.who_let_the_dogs_out_(sam_tobiana_edit).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "8.who_let_the_dogs_out_(sam_tobiana_edit).mp3"; sourceTree = "<group>"; };
 		CFBF8B831BDDE5480005770A /* SimpleMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBF8B871BDDE5480005770A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFBF8B881BDDE5480005770A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,11 +54,6 @@
 		CFBF8B9D1BDDE5480005770A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFBF8B9E1BDDE5480005770A /* SimpleMusicPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMusicPlayerTests.swift; sourceTree = "<group>"; };
 		CFBF8BC21BDE8A7E0005770A /* SongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
-		CFBF8BE01BDE91F50005770A /* Molto Allegro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Molto Allegro.mp3"; sourceTree = "<group>"; };
-		CFBF8BE11BDE91F50005770A /* psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "psy-gangnam_style[_the_sexy_peoplez_mix_].mp3"; sourceTree = "<group>"; };
-		CFBF8BE21BDE91F50005770A /* Uptown Funk (Bruno Mars).m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Uptown Funk (Bruno Mars).m4a"; sourceTree = "<group>"; };
-		CFBF8BE31BDE91F50005770A /* what_does_the_fox_says_(nick_di_rocco_original_remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "what_does_the_fox_says_(nick_di_rocco_original_remix).mp3"; sourceTree = "<group>"; };
-		CFBF8BE41BDE91F50005770A /* who_let_the_dogs_out_(sam_tobiana_edit).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "who_let_the_dogs_out_(sam_tobiana_edit).mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55C7C7861BDF440B002A503F /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				55C7C7871BDF440B002A503F /* 1.Uptown Funk (Bruno Mars).m4a */,
+				55C7C7881BDF440B002A503F /* 2.what_does_the_fox_says_(nick_di_rocco_original_remix).mp3 */,
+				55C7C7891BDF440B002A503F /* 3.psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 */,
+				55C7C78A1BDF440B002A503F /* 4.Furelise-Beethoven-bertoli.mp3 */,
+				55C7C78B1BDF440B002A503F /* 5.Molto Allegro.mp3 */,
+				55C7C78C1BDF440B002A503F /* 7.SampleVideo_1080x720_1mb.mp4 */,
+				55C7C78D1BDF440B002A503F /* 8.who_let_the_dogs_out_(sam_tobiana_edit).mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 		CFBF8B7A1BDDE5480005770A = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +113,6 @@
 				CFBF8B8A1BDDE5480005770A /* SongsListController.swift */,
 				CFBF8B8C1BDDE5480005770A /* Main.storyboard */,
 				CFBF8BC21BDE8A7E0005770A /* SongCell.swift */,
-				55C7C77E1BDF3BFF002A503F /* SampleVideo.mp4 */,
 				55C7C74C1BDF195F002A503F /* SongPlayerViewController.swift */,
 				CFBF8B8F1BDDE5480005770A /* Images.xcassets */,
 				CFBF8B911BDDE5480005770A /* LaunchScreen.xib */,
@@ -110,7 +124,7 @@
 		CFBF8B861BDDE5480005770A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CFBF8BDE1BDE91F50005770A /* Music */,
+				55C7C7861BDF440B002A503F /* Music */,
 				CFBF8B871BDDE5480005770A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -131,19 +145,6 @@
 				CFBF8B9D1BDDE5480005770A /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CFBF8BDE1BDE91F50005770A /* Music */ = {
-			isa = PBXGroup;
-			children = (
-				CFBF8BE01BDE91F50005770A /* Molto Allegro.mp3 */,
-				CFBF8BE11BDE91F50005770A /* psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 */,
-				CFBF8BE21BDE91F50005770A /* Uptown Funk (Bruno Mars).m4a */,
-				CFBF8BE31BDE91F50005770A /* what_does_the_fox_says_(nick_di_rocco_original_remix).mp3 */,
-				CFBF8BE41BDE91F50005770A /* who_let_the_dogs_out_(sam_tobiana_edit).mp3 */,
-				55C7C7811BDF3FB7002A503F /* Furelise-Beethoven-bertoli.mp3 */,
-			);
-			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,15 +227,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C7C7931BDF440B002A503F /* 7.SampleVideo_1080x720_1mb.mp4 in Resources */,
+				55C7C7941BDF440B002A503F /* 8.who_let_the_dogs_out_(sam_tobiana_edit).mp3 in Resources */,
+				55C7C78F1BDF440B002A503F /* 2.what_does_the_fox_says_(nick_di_rocco_original_remix).mp3 in Resources */,
+				55C7C78E1BDF440B002A503F /* 1.Uptown Funk (Bruno Mars).m4a in Resources */,
 				CFBF8B8E1BDDE5480005770A /* Main.storyboard in Resources */,
 				CFBF8B931BDDE5480005770A /* LaunchScreen.xib in Resources */,
-				CFBF8BE81BDE91F50005770A /* Uptown Funk (Bruno Mars).m4a in Resources */,
-				CFBF8BEA1BDE91F50005770A /* who_let_the_dogs_out_(sam_tobiana_edit).mp3 in Resources */,
-				CFBF8BE71BDE91F50005770A /* psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 in Resources */,
+				55C7C7901BDF440B002A503F /* 3.psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 in Resources */,
+				55C7C7921BDF440B002A503F /* 5.Molto Allegro.mp3 in Resources */,
+				55C7C7911BDF440B002A503F /* 4.Furelise-Beethoven-bertoli.mp3 in Resources */,
 				CFBF8B901BDDE5480005770A /* Images.xcassets in Resources */,
-				55C7C7821BDF3FB7002A503F /* Furelise-Beethoven-bertoli.mp3 in Resources */,
-				CFBF8BE91BDE91F50005770A /* what_does_the_fox_says_(nick_di_rocco_original_remix).mp3 in Resources */,
-				CFBF8BE61BDE91F50005770A /* Molto Allegro.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
