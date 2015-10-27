@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55C7C74D1BDF195F002A503F /* SongPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C7C74C1BDF195F002A503F /* SongPlayerViewController.swift */; };
+		557119101BDF527900A139A2 /* AudioVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571190F1BDF527900A139A2 /* AudioVideoPlayerViewController.swift */; };
 		55C7C78E1BDF440B002A503F /* 1.Uptown Funk (Bruno Mars).m4a in Resources */ = {isa = PBXBuildFile; fileRef = 55C7C7871BDF440B002A503F /* 1.Uptown Funk (Bruno Mars).m4a */; };
 		55C7C78F1BDF440B002A503F /* 2.what_does_the_fox_says_(nick_di_rocco_original_remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55C7C7881BDF440B002A503F /* 2.what_does_the_fox_says_(nick_di_rocco_original_remix).mp3 */; };
 		55C7C7901BDF440B002A503F /* 3.psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55C7C7891BDF440B002A503F /* 3.psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 */; };
@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		55C7C74C1BDF195F002A503F /* SongPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongPlayerViewController.swift; sourceTree = "<group>"; };
+		5571190F1BDF527900A139A2 /* AudioVideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioVideoPlayerViewController.swift; sourceTree = "<group>"; };
 		55C7C7871BDF440B002A503F /* 1.Uptown Funk (Bruno Mars).m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1.Uptown Funk (Bruno Mars).m4a"; sourceTree = "<group>"; };
 		55C7C7881BDF440B002A503F /* 2.what_does_the_fox_says_(nick_di_rocco_original_remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2.what_does_the_fox_says_(nick_di_rocco_original_remix).mp3"; sourceTree = "<group>"; };
 		55C7C7891BDF440B002A503F /* 3.psy-gangnam_style[_the_sexy_peoplez_mix_].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "3.psy-gangnam_style[_the_sexy_peoplez_mix_].mp3"; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 				CFBF8B8A1BDDE5480005770A /* SongsListController.swift */,
 				CFBF8B8C1BDDE5480005770A /* Main.storyboard */,
 				CFBF8BC21BDE8A7E0005770A /* SongCell.swift */,
-				55C7C74C1BDF195F002A503F /* SongPlayerViewController.swift */,
+				5571190F1BDF527900A139A2 /* AudioVideoPlayerViewController.swift */,
 				CFBF8B8F1BDDE5480005770A /* Images.xcassets */,
 				CFBF8B911BDDE5480005770A /* LaunchScreen.xib */,
 				CFBF8B861BDDE5480005770A /* Supporting Files */,
@@ -254,7 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C7C74D1BDF195F002A503F /* SongPlayerViewController.swift in Sources */,
+				557119101BDF527900A139A2 /* AudioVideoPlayerViewController.swift in Sources */,
 				CFBF8B8B1BDDE5480005770A /* SongsListController.swift in Sources */,
 				CFBF8BC31BDE8A7E0005770A /* SongCell.swift in Sources */,
 				CFBF8B891BDDE5480005770A /* AppDelegate.swift in Sources */,

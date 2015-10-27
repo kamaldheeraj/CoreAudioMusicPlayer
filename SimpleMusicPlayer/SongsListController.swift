@@ -20,7 +20,6 @@
             for bundle in NSBundle.allBundles(){
                 var filePaths = bundle.pathsForResourcesOfType(nil, inDirectory: nil)
             for file in filePaths{
-                println(file.lastPathComponent)
                 if(file.pathExtension=="mp3" || file.pathExtension=="m4a" || file.pathExtension == "mp4"){
                     songs.append(file)
                 }
@@ -49,8 +48,10 @@
         override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
             if segue.identifier == "showDetail" {
                 if let indexPath = self.tableView.indexPathForSelectedRow(){
-                    (segue.destinationViewController as! SongPlayerViewController).songPath = songs[indexPath.row] as! String
+                    ((segue.destinationViewController as! UINavigationController).childViewControllers[0] as!  AudioVideoPlayerViewController).songPath = songs[indexPath.row] as! String
                 }
             }
+        }
+        @IBAction func donePlayingAV(segue:UIStoryboardSegue) {
         }
     }
