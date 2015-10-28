@@ -69,8 +69,12 @@ class AudioVideoPlayerViewController: UIViewController {
         
         //Calling function to start playing
         myPlay()
+        
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.addObserver(self, selector: "playingDone", name: AVPlayerItemDidPlayToEndTimeNotification, object: player)
 
     }
+    
     
     override func viewWillDisappear(animated: Bool) {
         timer?.invalidate()
@@ -81,8 +85,13 @@ class AudioVideoPlayerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func playingDone( notification: NSNotification  ){
+        println("Done Playing")
+    
+    }
+    
     @IBAction func stopPressed(sender: AnyObject) {
-        player.seekToTime(CMTimeMake(0, 1))
+        player.seekToTime(kCMTimeZero)
         myPause()
     }
 
@@ -107,8 +116,7 @@ class AudioVideoPlayerViewController: UIViewController {
     
     @IBAction func sliderValueChange(sender: AnyObject) {
         player.seekToTime(CMTimeMake(Int64(slider.value), 1))
-        //println( slider.value )
-        myPlay()
+        playPausePressed(sender)
     }
     
     //Reference: https://www.youtube.com/watch?v=S3BSK8UVJyc
