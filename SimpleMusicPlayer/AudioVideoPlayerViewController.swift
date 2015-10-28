@@ -11,7 +11,7 @@ import AVFoundation
 import AVKit
 class AudioVideoPlayerViewController: UIViewController {
 
-    @IBOutlet var mp3Image: UIImageView!
+    var mp3ImageView = UIImageView(image: UIImage(named: "Stock"))
     @IBOutlet weak var songLabel: UINavigationItem!
     
     @IBOutlet weak var slider: UISlider!
@@ -22,7 +22,6 @@ class AudioVideoPlayerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //http://stackoverflow.com/questions/30243658/displaying-artwork-for-mp3-file
         let playerItem = AVPlayerItem( URL: NSURL(fileURLWithPath: songPath))
         let metaDataList = playerItem.asset.metadata as! [AVMetadataItem]
@@ -34,11 +33,14 @@ class AudioVideoPlayerViewController: UIViewController {
                 if key == "artwork" {
                     if let audioImage = UIImage(data: value as! NSData) {
                         //println(audioImage.description)
-                        mp3Image.image = audioImage
+                        mp3ImageView.image = audioImage
                     }
                 }
             }
         }
+        mp3ImageView.frame = CGRect(x: 15, y: 35, width: view.frame.width, height: view.frame.height-85)
+        mp3ImageView.contentMode = UIViewContentMode.ScaleAspectFit
+        view.addSubview(mp3ImageView)
         songLabel.title = songPath.lastPathComponent.stringByDeletingPathExtension
         player = AVPlayer(URL: NSURL(fileURLWithPath: songPath))
                 //slider.maximumValue = player

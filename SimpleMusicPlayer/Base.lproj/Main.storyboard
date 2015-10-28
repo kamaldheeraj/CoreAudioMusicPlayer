@@ -73,9 +73,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stock" translatesAutoresizingMaskIntoConstraints="NO" id="KhA-0e-87t">
-                                <rect key="frame" x="172" y="172" width="256" height="256"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md2-6p-nga" userLabel="Restart">
                                 <rect key="frame" x="0.0" y="378" width="100" height="50"/>
                                 <accessibility key="accessibilityConfiguration" label="Restart"/>
@@ -136,9 +133,7 @@
                         <constraints>
                             <constraint firstItem="Vrd-Ru-Onc" firstAttribute="top" secondItem="IeN-1G-VNK" secondAttribute="bottom" constant="20" id="0bu-eO-i0K"/>
                             <constraint firstAttribute="centerX" secondItem="IeN-1G-VNK" secondAttribute="centerX" id="1Xc-La-2Nh"/>
-                            <constraint firstAttribute="centerX" secondItem="KhA-0e-87t" secondAttribute="centerX" id="1uf-s7-9eW"/>
                             <constraint firstItem="IeN-1G-VNK" firstAttribute="leading" secondItem="5RR-lH-RTD" secondAttribute="leadingMargin" id="3cS-x4-nqx"/>
-                            <constraint firstAttribute="centerY" secondItem="KhA-0e-87t" secondAttribute="centerY" id="EU3-nZ-3O1"/>
                             <constraint firstItem="AbE-cF-RB1" firstAttribute="centerX" secondItem="oeg-e9-H7v" secondAttribute="centerX" id="Geb-gw-tAN"/>
                             <constraint firstItem="AbE-cF-RB1" firstAttribute="top" secondItem="oeg-e9-H7v" secondAttribute="bottom" constant="53" id="T5U-cb-zU3"/>
                             <constraint firstItem="md2-6p-nga" firstAttribute="top" secondItem="AbE-cF-RB1" secondAttribute="bottom" constant="53" id="cGm-HA-Ptf"/>
@@ -156,7 +151,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="mp3Image" destination="KhA-0e-87t" id="lRV-tF-KxR"/>
                         <outlet property="playPauseButton" destination="AbE-cF-RB1" id="lnn-nx-Lef"/>
                         <outlet property="slider" destination="IeN-1G-VNK" id="D85-ya-Azy"/>
                         <outlet property="songLabel" destination="xFC-jh-bDP" id="c2S-lp-1Ui"/>
@@ -189,7 +183,6 @@
     <resources>
         <image name="Play" width="48" height="48"/>
         <image name="Reset" width="48" height="48"/>
-        <image name="Stock" width="256" height="256"/>
         <image name="Stop" width="48" height="48"/>
     </resources>
 </document>
