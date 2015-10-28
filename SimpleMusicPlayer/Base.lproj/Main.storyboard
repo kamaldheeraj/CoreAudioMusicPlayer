@@ -124,6 +124,7 @@
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IeN-1G-VNK">
                                 <rect key="frame" x="14" y="550" width="572" height="31"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <connections>
                                     <action selector="sliderValueChange:" destination="0uj-cd-48k" eventType="valueChanged" id="VVn-Kq-LrW"/>
                                 </connections>
@@ -153,7 +154,7 @@
                     <connections>
                         <outlet property="playPauseButton" destination="AbE-cF-RB1" id="lnn-nx-Lef"/>
                         <outlet property="slider" destination="IeN-1G-VNK" id="D85-ya-Azy"/>
-                        <outlet property="songLabel" destination="xFC-jh-bDP" id="c2S-lp-1Ui"/>
+                        <outlet property="songVideoLabel" destination="xFC-jh-bDP" id="rHb-e1-zDD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Npe-8K-F6r" userLabel="First Responder" sceneMemberID="firstResponder"/>
