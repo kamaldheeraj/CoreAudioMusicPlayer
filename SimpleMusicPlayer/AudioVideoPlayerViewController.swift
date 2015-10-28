@@ -45,7 +45,7 @@ class AudioVideoPlayerViewController: UIViewController {
                 }
             }
         }
-        mp3ImageView.frame = CGRect(x: 15, y: 35, width: view.frame.width, height: view.frame.height-85)
+        mp3ImageView.frame = CGRect(x: 40, y: 50, width: view.frame.width-40, height: view.frame.height-95)
         mp3ImageView.contentMode = UIViewContentMode.ScaleAspectFit
         view.addSubview(mp3ImageView)
         //End of Code to display mp3 images
@@ -59,7 +59,7 @@ class AudioVideoPlayerViewController: UIViewController {
         
         //AVPlayerLayer to place video in view
         let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.frame = CGRect(x: 15, y: 35, width: view.frame.size.width, height: view.frame.size.height-85)
+        playerLayer.frame = CGRect(x: 40, y: 50, width: view.frame.size.width-40, height: view.frame.size.height-95)
         view.layer.addSublayer(playerLayer)
         
         let avAsset = AVURLAsset(URL: NSURL(fileURLWithPath: songPath)!, options: nil)

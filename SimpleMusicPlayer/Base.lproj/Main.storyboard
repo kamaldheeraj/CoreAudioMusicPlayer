@@ -74,7 +74,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md2-6p-nga" userLabel="Restart">
-                                <rect key="frame" x="0.0" y="378" width="100" height="50"/>
+                                <rect key="frame" x="-24" y="378" width="100" height="50"/>
                                 <accessibility key="accessibilityConfiguration" label="Restart"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="aAg-PV-VWN"/>
@@ -88,7 +88,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeg-e9-H7v" userLabel="Stop">
-                                <rect key="frame" x="0.0" y="172" width="100" height="50"/>
+                                <rect key="frame" x="-24" y="172" width="100" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="5Xy-FY-jN9"/>
                                     <constraint firstAttribute="height" constant="50" id="76V-D7-Lkr"/>
@@ -109,7 +109,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbE-cF-RB1" userLabel="PlayPause">
-                                <rect key="frame" x="0.0" y="275" width="100" height="50"/>
+                                <rect key="frame" x="-24" y="275" width="100" height="50"/>
                                 <accessibility key="accessibilityConfiguration" label="PlayPause"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="IjQ-uh-NDH"/>
@@ -139,7 +139,7 @@
                             <constraint firstItem="AbE-cF-RB1" firstAttribute="top" secondItem="oeg-e9-H7v" secondAttribute="bottom" constant="53" id="T5U-cb-zU3"/>
                             <constraint firstItem="md2-6p-nga" firstAttribute="top" secondItem="AbE-cF-RB1" secondAttribute="bottom" constant="53" id="cGm-HA-Ptf"/>
                             <constraint firstAttribute="centerY" secondItem="AbE-cF-RB1" secondAttribute="centerY" id="leq-8p-ioj"/>
-                            <constraint firstItem="AbE-cF-RB1" firstAttribute="leading" secondItem="5RR-lH-RTD" secondAttribute="leadingMargin" constant="-16" id="nh8-YG-ykH"/>
+                            <constraint firstItem="AbE-cF-RB1" firstAttribute="leading" secondItem="5RR-lH-RTD" secondAttribute="leadingMargin" constant="-40" id="nh8-YG-ykH"/>
                             <constraint firstItem="AbE-cF-RB1" firstAttribute="centerX" secondItem="md2-6p-nga" secondAttribute="centerX" id="pWU-qa-MGI"/>
                         </constraints>
                     </view>
