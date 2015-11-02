@@ -16,11 +16,19 @@
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
             
+            let musicDirectoryPaths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.MusicDirectory,NSSearchPathDomainMask.UserDomainMask, true)
+            
+            for directory in musicDirectoryPaths
+            {
+                println(directory)
+            }
+            
             //let filePaths = NSBundle.mainBundle().pathsForResourcesOfType(nil, inDirectory: nil)
             for bundle in NSBundle.allBundles(){
                 var filePaths = bundle.pathsForResourcesOfType(nil, inDirectory: nil)
             for file in filePaths{
-                if(file.pathExtension=="mp3" || file.pathExtension=="m4a" || file.pathExtension == "mp4"){
+                //if(file.pathExtension=="mp3" || file.pathExtension=="m4a" || file.pathExtension == "mp4")
+                if(file.pathExtension=="mp3" || file.pathExtension=="m4a"){
                     songs.append(file)
                 }
             }

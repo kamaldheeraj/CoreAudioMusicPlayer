@@ -58,9 +58,9 @@ class AudioVideoPlayerViewController: UIViewController {
         player = AVPlayer(URL: NSURL(fileURLWithPath: songPath))
         
         //AVPlayerLayer to place video in view
-        let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.frame = CGRect(x: 40, y: 50, width: view.frame.size.width-40, height: view.frame.size.height-95)
-        view.layer.addSublayer(playerLayer)
+//        let playerLayer = AVPlayerLayer(player: player)
+//        playerLayer.frame = CGRect(x: 40, y: 50, width: view.frame.size.width-40, height: view.frame.size.height-95)
+//        view.layer.addSublayer(playerLayer)
         
         let avAsset = AVURLAsset(URL: NSURL(fileURLWithPath: songPath)!, options: nil)
         slider.maximumValue = Float(CMTimeGetSeconds(avAsset.duration))
