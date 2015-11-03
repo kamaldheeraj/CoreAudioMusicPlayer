@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oNP-uD-74J">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oNP-uD-74J">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -129,6 +129,12 @@
                                     <action selector="sliderValueChange:" destination="0uj-cd-48k" eventType="valueChanged" id="VVn-Kq-LrW"/>
                                 </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0M1-UL-cfc" userLabel="timer">
+                                <rect key="frame" x="537" y="571" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -136,8 +142,10 @@
                             <constraint firstAttribute="centerX" secondItem="IeN-1G-VNK" secondAttribute="centerX" id="1Xc-La-2Nh"/>
                             <constraint firstItem="IeN-1G-VNK" firstAttribute="leading" secondItem="5RR-lH-RTD" secondAttribute="leadingMargin" id="3cS-x4-nqx"/>
                             <constraint firstItem="AbE-cF-RB1" firstAttribute="centerX" secondItem="oeg-e9-H7v" secondAttribute="centerX" id="Geb-gw-tAN"/>
+                            <constraint firstItem="IeN-1G-VNK" firstAttribute="trailing" secondItem="0M1-UL-cfc" secondAttribute="trailing" constant="5" id="J64-3l-BtC"/>
                             <constraint firstItem="AbE-cF-RB1" firstAttribute="top" secondItem="oeg-e9-H7v" secondAttribute="bottom" constant="53" id="T5U-cb-zU3"/>
                             <constraint firstItem="md2-6p-nga" firstAttribute="top" secondItem="AbE-cF-RB1" secondAttribute="bottom" constant="53" id="cGm-HA-Ptf"/>
+                            <constraint firstItem="0M1-UL-cfc" firstAttribute="top" secondItem="IeN-1G-VNK" secondAttribute="bottom" constant="-9" id="hsZ-EQ-jfe"/>
                             <constraint firstAttribute="centerY" secondItem="AbE-cF-RB1" secondAttribute="centerY" id="leq-8p-ioj"/>
                             <constraint firstItem="AbE-cF-RB1" firstAttribute="leading" secondItem="5RR-lH-RTD" secondAttribute="leadingMargin" constant="-40" id="nh8-YG-ykH"/>
                             <constraint firstItem="AbE-cF-RB1" firstAttribute="centerX" secondItem="md2-6p-nga" secondAttribute="centerX" id="pWU-qa-MGI"/>
@@ -155,6 +163,7 @@
                         <outlet property="playPauseButton" destination="AbE-cF-RB1" id="lnn-nx-Lef"/>
                         <outlet property="slider" destination="IeN-1G-VNK" id="D85-ya-Azy"/>
                         <outlet property="songVideoLabel" destination="xFC-jh-bDP" id="rHb-e1-zDD"/>
+                        <outlet property="timer" destination="0M1-UL-cfc" id="ZOz-C2-SBO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Npe-8K-F6r" userLabel="First Responder" sceneMemberID="firstResponder"/>

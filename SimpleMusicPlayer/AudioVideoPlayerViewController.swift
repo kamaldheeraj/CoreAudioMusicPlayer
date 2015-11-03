@@ -14,7 +14,12 @@ class AudioVideoPlayerViewController: UIViewController {
     var mp3ImageView = UIImageView(image: UIImage(named: "Stock"))
     var sliderImage = UIImage(named: "sliderImage")
     
-    var timer:NSTimer?
+    var avAsset:AVAsset?
+    
+    var sliderTimer:NSTimer?
+    var secondsTimer:NSTimer?
+    
+    @IBOutlet weak var timer: UILabel!
     
     @IBOutlet weak var songVideoLabel: UINavigationItem!
     
@@ -27,7 +32,7 @@ class AudioVideoPlayerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        secondsTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "changeTime", userInfo: nil, repeats: true)
         //Start of Code to display mp3 images
         //Reference: http://stackoverflow.com/questions/30243658/displaying-artwork-for-mp3-file
         let playerItem = AVPlayerItem( URL: NSURL(fileURLWithPath: songPath))
@@ -62,22 +67,21 @@ class AudioVideoPlayerViewController: UIViewController {
 //        playerLayer.frame = CGRect(x: 40, y: 50, width: view.frame.size.width-40, height: view.frame.size.height-95)
 //        view.layer.addSublayer(playerLayer)
         
-        let avAsset = AVURLAsset(URL: NSURL(fileURLWithPath: songPath)!, options: nil)
-        slider.maximumValue = Float(CMTimeGetSeconds(avAsset.duration))
+        avAsset = AVURLAsset(URL: NSURL(fileURLWithPath: songPath)!, options: nil)
+        slider.maximumValue = Float(CMTimeGetSeconds(avAsset!.duration))
             
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "moveSlider", userInfo: nil, repeats: true)
+        sliderTimer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "moveSlider", userInfo: nil, repeats: true)
         
         //Calling function to start playing
         myPlay()
-        
-        let notificationCenter = NSNotificationCenter.defaultCenter()
-        notificationCenter.addObserver(self, selector: "playingDone", name: AVPlayerItemDidPlayToEndTimeNotification, object: player)
 
     }
     
     
     override func viewWillDisappear(animated: Bool) {
-        timer?.invalidate()
+        sliderTimer!.invalidate()
+        secondsTimer!.invalidate()
+        player.pause()
     }
 
     override func didReceiveMemoryWarning() {
@@ -85,10 +89,9 @@ class AudioVideoPlayerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func playingDone( notification: NSNotification  ){
-        println("Done Playing")
-    
-    }
+//    func playingDone( notification: NSNotification  ){
+//        println("Done Playing")
+//    }
     
     @IBAction func stopPressed(sender: AnyObject) {
         player.seekToTime(kCMTimeZero)
@@ -122,6 +125,23 @@ class AudioVideoPlayerViewController: UIViewController {
     //Reference: https://www.youtube.com/watch?v=S3BSK8UVJyc
     func moveSlider(){
         slider.value = Float(CMTimeGetSeconds(player.currentTime()))
+    }
+    
+    func changeTime(){
+        let timeCurrent = Int(round(CMTimeGetSeconds(player.currentTime())))
+        let timeTotal = Int(round(CMTimeGetSeconds(avAsset!.duration)))
+        if (timeCurrent%60)<10 && (timeTotal%60)<10 {
+        self.timer.text = "\(timeCurrent/60):0\(timeCurrent%60)/\(timeTotal/60):0\(timeTotal%60)"
+        }
+        else if (timeCurrent%60)<10 {
+           self.timer.text = "\(timeCurrent/60):0\(timeCurrent%60)/\(timeTotal/60):\(timeTotal%60)"
+        }
+        else if (timeTotal%60)<10 {
+            self.timer.text = "\(timeCurrent/60):\(timeCurrent%60)/\(timeTotal/60):0\(timeTotal%60)"
+        }
+        else{
+            self.timer.text = "\(timeCurrent/60):\(timeCurrent%60)/\(timeTotal/60):\(timeTotal%60)"
+        }
     }
     
     @IBAction func restartButtonPressed(sender: AnyObject) {
