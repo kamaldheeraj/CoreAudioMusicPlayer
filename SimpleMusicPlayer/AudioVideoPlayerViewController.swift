@@ -112,6 +112,7 @@ class AudioVideoPlayerViewController: UIViewController {
     }
     
     //Reference: https://www.youtube.com/watch?v=S3BSK8UVJyc
+    // Jared Davidson channel Youtube
     func moveSlider(){
         slider.value = Float(player.currentTime)
     }
