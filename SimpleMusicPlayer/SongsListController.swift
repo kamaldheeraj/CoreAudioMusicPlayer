@@ -7,23 +7,14 @@
     //
     
     import UIKit
-    import AVFoundation
-    import AVKit
+    //import AVFoundation
+    //import AVKit
     class SongsListController: UITableViewController {
-        
         var songs = [AnyObject]()
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
             
-            let musicDirectoryPaths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.MusicDirectory,NSSearchPathDomainMask.UserDomainMask, true)
-            
-            for directory in musicDirectoryPaths
-            {
-                println(directory)
-            }
-            
-            //let filePaths = NSBundle.mainBundle().pathsForResourcesOfType(nil, inDirectory: nil)
             for bundle in NSBundle.allBundles(){
                 var filePaths = bundle.pathsForResourcesOfType(nil, inDirectory: nil)
             for file in filePaths{

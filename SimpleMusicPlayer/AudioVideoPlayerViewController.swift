@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-import AVKit
+//import AVKit
 class AudioVideoPlayerViewController: UIViewController {
     //var for UIImageView to display mp3 image created with a default image for mp3s with no images
     var mp3ImageView = UIImageView(image: UIImage(named: "Stock"))
@@ -28,7 +28,7 @@ class AudioVideoPlayerViewController: UIViewController {
     @IBOutlet weak var playPauseButton: UIButton!
     
     var songPath:String!
-    var player = AVPlayer()
+    var player = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +60,8 @@ class AudioVideoPlayerViewController: UIViewController {
         songVideoLabel.title = songPath.lastPathComponent.stringByDeletingPathExtension
         
         //AVPlayer to play song/video
-        player = AVPlayer(URL: NSURL(fileURLWithPath: songPath))
+        player = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: songPath), error: nil)
+        //player = AVAudioPlayer(URL: NSURL(fileURLWithPath: songPath))
         
         //AVPlayerLayer to place video in view
 //        let playerLayer = AVPlayerLayer(player: player)
@@ -94,8 +95,7 @@ class AudioVideoPlayerViewController: UIViewController {
 //    }
     
     @IBAction func stopPressed(sender: AnyObject) {
-        player.seekToTime(kCMTimeZero)
-        myPause()
+        player.stop()
     }
 
  
@@ -118,17 +118,21 @@ class AudioVideoPlayerViewController: UIViewController {
     }
     
     @IBAction func sliderValueChange(sender: AnyObject) {
-        player.seekToTime(CMTimeMake(Int64(slider.value), 1))
-        playPausePressed(sender)
+        player.currentTime=NSTimeInterval(slider.value)
+        player.play()
+        //player.seekToTime(CMTimeMake(Int64(slider.value), 1))
+        //playPausePressed(sender)
     }
     
     //Reference: https://www.youtube.com/watch?v=S3BSK8UVJyc
     func moveSlider(){
-        slider.value = Float(CMTimeGetSeconds(player.currentTime()))
+        //slider.value = Float(CMTimeGetSeconds(player.currentTime()))
+        slider.value = Float(player.currentTime)
     }
     
     func changeTime(){
-        let timeCurrent = Int(round(CMTimeGetSeconds(player.currentTime())))
+        //let timeCurrent = Int(round(CMTimeGetSeconds(player.currentTime())))
+        let timeCurrent = Int(round(player.currentTime))
         let timeTotal = Int(round(CMTimeGetSeconds(avAsset!.duration)))
         if (timeCurrent%60)<10 && (timeTotal%60)<10 {
         self.timer.text = "\(timeCurrent/60):0\(timeCurrent%60)/\(timeTotal/60):0\(timeTotal%60)"
@@ -145,7 +149,8 @@ class AudioVideoPlayerViewController: UIViewController {
     }
     
     @IBAction func restartButtonPressed(sender: AnyObject) {
-    player.seekToTime(CMTimeMake(0, 1))
+    player.currentTime=0
+        //player.seekToTime(CMTimeMake(0, 1))
         myPlay()
     }
 }
