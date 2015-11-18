@@ -7,21 +7,19 @@
     //
     
     import UIKit
-    import AVFoundation
-    import AVKit
+    //import AVFoundation
+    //import AVKit
     class SongsListController: UITableViewController {
-        
         var songs = [AnyObject]()
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
             
-            //let filePaths = NSBundle.mainBundle().pathsForResourcesOfType(nil, inDirectory: nil)
             for bundle in NSBundle.allBundles(){
                 var filePaths = bundle.pathsForResourcesOfType(nil, inDirectory: nil)
             for file in filePaths{
-                println(file.lastPathComponent)
-                if(file.pathExtension=="mp3" || file.pathExtension=="m4a" || file.pathExtension == "mp4"){
+                //if(file.pathExtension=="mp3" || file.pathExtension=="m4a" || file.pathExtension == "mp4")
+                if(file.pathExtension=="mp3" || file.pathExtension=="m4a"){
                     songs.append(file)
                 }
             }
@@ -49,7 +47,7 @@
         override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
             if segue.identifier == "showDetail" {
                 if let indexPath = self.tableView.indexPathForSelectedRow(){
-                    (segue.destinationViewController as! SongPlayerViewController).songPath = songs[indexPath.row] as! String
+                    ((segue.destinationViewController as! UINavigationController).childViewControllers[0] as!  AudioVideoPlayerViewController).songPath = songs[indexPath.row] as! String
                 }
             }
         }
