@@ -44,7 +44,6 @@ class AudioVideoPlayerViewController: UIViewController {
             if let key = metaData.commonKey, let value = metaData.value {
                 if key == "artwork" {
                     if let audioImage = UIImage(data: value as! NSData) {
-                        //println(audioImage.description)
                         mp3ImageView.image = audioImage
                     }
                 }
@@ -61,12 +60,6 @@ class AudioVideoPlayerViewController: UIViewController {
         
         //AVPlayer to play song/video
         player = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: songPath), error: nil)
-        //player = AVAudioPlayer(URL: NSURL(fileURLWithPath: songPath))
-        
-        //AVPlayerLayer to place video in view
-//        let playerLayer = AVPlayerLayer(player: player)
-//        playerLayer.frame = CGRect(x: 40, y: 50, width: view.frame.size.width-40, height: view.frame.size.height-95)
-//        view.layer.addSublayer(playerLayer)
         
         avAsset = AVURLAsset(URL: NSURL(fileURLWithPath: songPath)!, options: nil)
         slider.maximumValue = Float(CMTimeGetSeconds(avAsset!.duration))
@@ -89,10 +82,6 @@ class AudioVideoPlayerViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-//    func playingDone( notification: NSNotification  ){
-//        println("Done Playing")
-//    }
     
     @IBAction func stopPressed(sender: AnyObject) {
         player.stop()
@@ -126,12 +115,10 @@ class AudioVideoPlayerViewController: UIViewController {
     
     //Reference: https://www.youtube.com/watch?v=S3BSK8UVJyc
     func moveSlider(){
-        //slider.value = Float(CMTimeGetSeconds(player.currentTime()))
         slider.value = Float(player.currentTime)
     }
     
     func changeTime(){
-        //let timeCurrent = Int(round(CMTimeGetSeconds(player.currentTime())))
         let timeCurrent = Int(round(player.currentTime))
         let timeTotal = Int(round(CMTimeGetSeconds(avAsset!.duration)))
         if (timeCurrent%60)<10 && (timeTotal%60)<10 {
@@ -150,7 +137,6 @@ class AudioVideoPlayerViewController: UIViewController {
     
     @IBAction func restartButtonPressed(sender: AnyObject) {
     player.currentTime=0
-        //player.seekToTime(CMTimeMake(0, 1))
         myPlay()
     }
 }
