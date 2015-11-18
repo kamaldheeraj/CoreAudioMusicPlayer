@@ -58,11 +58,10 @@ class AudioVideoPlayerViewController: UIViewController {
         
         songVideoLabel.title = songPath.lastPathComponent.stringByDeletingPathExtension
         
-        //AVPlayer to play song/video
+        //AVAudioPlayer to play song
         player = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: songPath), error: nil)
         
-        avAsset = AVURLAsset(URL: NSURL(fileURLWithPath: songPath)!, options: nil)
-        slider.maximumValue = Float(CMTimeGetSeconds(avAsset!.duration))
+        slider.maximumValue = Float(player.duration)
             
         sliderTimer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "moveSlider", userInfo: nil, repeats: true)
         
@@ -84,12 +83,13 @@ class AudioVideoPlayerViewController: UIViewController {
     }
     
     @IBAction func stopPressed(sender: AnyObject) {
-        player.stop()
+        player.currentTime=0
+        myPause()
     }
 
  
     @IBAction func playPausePressed(sender: AnyObject) {
-        if player.rate>0{
+        if player.playing{
         myPause()
         }
         else
@@ -109,8 +109,6 @@ class AudioVideoPlayerViewController: UIViewController {
     @IBAction func sliderValueChange(sender: AnyObject) {
         player.currentTime=NSTimeInterval(slider.value)
         player.play()
-        //player.seekToTime(CMTimeMake(Int64(slider.value), 1))
-        //playPausePressed(sender)
     }
     
     //Reference: https://www.youtube.com/watch?v=S3BSK8UVJyc
@@ -120,7 +118,7 @@ class AudioVideoPlayerViewController: UIViewController {
     
     func changeTime(){
         let timeCurrent = Int(round(player.currentTime))
-        let timeTotal = Int(round(CMTimeGetSeconds(avAsset!.duration)))
+        let timeTotal = Int(round(player.duration))
         if (timeCurrent%60)<10 && (timeTotal%60)<10 {
         self.timer.text = "\(timeCurrent/60):0\(timeCurrent%60)/\(timeTotal/60):0\(timeTotal%60)"
         }
