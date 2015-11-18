@@ -7,8 +7,6 @@
     //
     
     import UIKit
-    //import AVFoundation
-    //import AVKit
     class SongsListController: UITableViewController {
         var songs = [AnyObject]()
         override func viewDidLoad() {
@@ -50,5 +48,7 @@
                     ((segue.destinationViewController as! UINavigationController).childViewControllers[0] as!  AudioVideoPlayerViewController).songPath = songs[indexPath.row] as! String
                 }
             }
+        }
+        @IBAction func donePlayingAV(segue:UIStoryboardSegue) {
         }
     }
